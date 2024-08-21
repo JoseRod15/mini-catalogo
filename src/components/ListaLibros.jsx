@@ -14,8 +14,7 @@ const ListaLibro = ({libros}) => {
     return (
         <>
 
-        <h1>Formulario para Agregar Libros</h1>
-        <FormularioAgregarLibro agregarLibro= {agregarLibro}></FormularioAgregarLibro>
+        
         <h1>Catalogo de libros</h1>
         <label className="categorias">Categoria:</label>
         <select className="SelectBox" onChange={(e)=>setCategoria(e.target.value)}>
@@ -42,6 +41,11 @@ const ListaLibro = ({libros}) => {
                     </div>
                 ))
             }
+        </div>
+
+        <div>
+        <h1>Formulario para Agregar Libros</h1>
+        <FormularioAgregarLibro agregarLibro= {agregarLibro}></FormularioAgregarLibro>
         </div>
         </>
     )
